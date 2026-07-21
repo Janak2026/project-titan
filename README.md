@@ -1,121 +1,164 @@
-# TITAN
+# Fabric Enterprise AI Platform
 
-> **Enterprise AI Platform built on Microsoft Fabric**
+![Microsoft Fabric](https://img.shields.io/badge/Microsoft-Fabric-blue?logo=microsoft)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![Apache Spark](https://img.shields.io/badge/Apache-Spark-E25A1C?logo=apachespark&logoColor=white)
+![Power BI](https://img.shields.io/badge/Power-BI-F2C811?logo=powerbi&logoColor=black)
+![License](https://img.shields.io/github/license/Janak2026/fabric-enterprise-ai-platform)
+![Last Commit](https://img.shields.io/github/last-commit/Janak2026/fabric-enterprise-ai-platform)
 
-TITAN (Trusted Intelligent Transformation & Analytics Network) is an end-to-end Enterprise AI Data Platform that demonstrates how modern organizations build scalable data, analytics, machine learning, and Generative AI solutions using Microsoft Fabric.
+> **An end-to-end Enterprise AI Platform built on Microsoft Fabric demonstrating modern Data Engineering, Real-Time Analytics, Business Intelligence, Machine Learning, and Generative AI.**
 
 ---
 
-# Project Vision
+## 📖 Overview
 
-Build a production-style Enterprise AI Platform that combines:
+The **Fabric Enterprise AI Platform** is a production-style portfolio project designed to demonstrate how modern enterprises build scalable, AI-ready data platforms using **Microsoft Fabric**.
 
-- Microsoft Fabric
-- Lakehouse Architecture
+Rather than showcasing individual technologies in isolation, this project brings together the complete analytics lifecycle—from data ingestion and transformation to business intelligence, machine learning, and AI-powered applications—within a unified Microsoft Fabric ecosystem.
+
+The project follows enterprise architecture principles, modern software engineering practices, and cloud-native design patterns that are commonly used in large-scale production environments.
+
+---
+
+# 🎯 Objectives
+
+This project aims to demonstrate:
+
+- Enterprise Data Engineering with Microsoft Fabric
+- Lakehouse Architecture using OneLake
+- Medallion Architecture (Bronze → Silver → Gold)
+- Batch and Real-Time Data Processing
+- Enterprise Data Pipelines
+- Semantic Models & Power BI
+- AI-Ready Data Platforms
+- Machine Learning Integration
+- Retrieval-Augmented Generation (RAG)
+- AI Agents for Business Intelligence
+- Enterprise Software Engineering Best Practices
+
+---
+
+# 🚀 Project Highlights
+
+- Microsoft Fabric End-to-End Architecture
+- OneLake & Lakehouse Implementation
+- Data Factory Pipelines
+- Eventstream & Eventhouse
+- Spark & PySpark Data Engineering
 - Medallion Architecture
-- Real-Time Analytics
-- Machine Learning
-- Generative AI
-- RAG
-- AI Agents
-- Power BI
-
----
-
-# Architecture
-
-```
-                 Enterprise Data Sources
-                           │
-        ┌──────────────────┴──────────────────┐
-        │                                     │
-    Batch Data                         Streaming Data
-        │                                     │
-        └──────────────┬──────────────────────┘
-                       │
-               Microsoft Fabric
-                       │
-        ┌──────────────┴──────────────┐
-        │                             │
-     Data Factory                Eventstream
-        │                             │
-        └──────────────┬──────────────┘
-                       │
-                   Lakehouse
-                       │
-            Bronze → Silver → Gold
-                       │
-        ┌──────────────┴──────────────┐
-        │                             │
-   Semantic Model                 AI Platform
-        │                             │
-    Power BI                  RAG • Agents • LLMs
-```
-
----
-
-# Technology Stack
-
-## Data Engineering
-
-- Microsoft Fabric
-- OneLake
-- Data Factory
-- Lakehouse
-- Eventstream
-- Eventhouse
-- Spark
-- PySpark
 - Delta Lake
-
-## Analytics
-
-- Power BI
 - Semantic Models
-- SQL
-
-## Artificial Intelligence
-
-- Azure OpenAI
-- LangGraph
-- RAG
-- Embeddings
-- Vector Search
+- Power BI Dashboards
+- Azure OpenAI Integration
+- Retrieval-Augmented Generation (RAG)
 - AI Agents
-
-## DevOps
-
-- Git
-- GitHub
-- CI/CD
+- GitHub & CI/CD Ready Repository
 
 ---
 
-# Repository Structure
+# 🏗️ Solution Architecture
+
+```text
+                    Enterprise Data Sources
+                               │
+        ┌──────────────────────┴──────────────────────┐
+        │                                             │
+   Batch Data                                  Streaming Data
+        │                                             │
+        └──────────────────────┬──────────────────────┘
+                               │
+                      Microsoft Fabric
+                               │
+        ┌──────────────────────┴──────────────────────┐
+        │                                             │
+    Data Factory                               Eventstream
+        │                                             │
+        └──────────────────────┬──────────────────────┘
+                               │
+                           Lakehouse
+                               │
+                    Bronze → Silver → Gold
+                               │
+        ┌──────────────────────┴──────────────────────┐
+        │                                             │
+   Semantic Models                              AI Platform
+        │                                             │
+    Power BI              Azure OpenAI • RAG • AI Agents
+```
+
+---
+
+# 🛠 Technology Stack
+
+| Category | Technologies |
+|------------|--------------|
+| **Platform** | Microsoft Fabric, OneLake |
+| **Data Engineering** | Spark, PySpark, Delta Lake, Lakehouse |
+| **Data Integration** | Data Factory, Data Pipelines |
+| **Streaming** | Eventstream, Eventhouse |
+| **Analytics** | Power BI, Semantic Models, SQL |
+| **Artificial Intelligence** | Azure OpenAI, LangGraph, RAG, Embeddings, Vector Search, AI Agents |
+| **Programming** | Python, SQL |
+| **Version Control** | Git, GitHub |
+| **DevOps** | CI/CD |
+
+---
+
+# 📂 Repository Structure
 
 ```text
 fabric-enterprise-ai-platform/
 
 ├── .github/
 ├── ai/
+│   └── prompts/
 ├── assets/
 ├── automation/
 ├── data/
+│   ├── sample-data/
+│   ├── schemas/
+│   └── test-data/
 ├── docs/
 ├── fabric/
-└── tests/
+│   ├── eventhouse/
+│   ├── eventstream/
+│   ├── notebooks/
+│   ├── pipelines/
+│   ├── powerbi/
+│   └── semantic-model/
+├── tests/
+├── README.md
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-# Project Modules
+# 📁 Repository Guide
 
-## Fabric
+| Folder | Description |
+|---------|-------------|
+| **fabric/** | Microsoft Fabric assets including notebooks, pipelines, Eventstream, Eventhouse, Semantic Models, and Power BI. |
+| **ai/** | AI components including prompt library, RAG workflows, embeddings, and AI agents. |
+| **data/** | Sample datasets, schemas, and test data. |
+| **automation/** | Deployment scripts, CI/CD, and operational automation. |
+| **assets/** | Images, architecture diagrams, demos, and supporting resources. |
+| **docs/** | Design notes, implementation references, and supporting documentation. |
+| **tests/** | Unit tests and integration tests. |
 
-Microsoft Fabric implementation including:
+---
 
-- Pipelines
-- Notebooks
+# ⚙️ Core Components
+
+## Microsoft Fabric
+
+- OneLake
+- Lakehouse
+- Data Factory
+- Spark Notebooks
 - Eventstream
 - Eventhouse
 - Semantic Models
@@ -123,88 +166,162 @@ Microsoft Fabric implementation including:
 
 ---
 
-## AI
+## Data Engineering
 
-Enterprise AI components including:
+- Data Ingestion
+- Batch Processing
+- Streaming Processing
+- Data Transformation
+- Delta Lake
+- Medallion Architecture
+- Pipeline Orchestration
 
-- AI Agents
+---
+
+## Artificial Intelligence
+
+- Azure OpenAI
+- Prompt Engineering
 - Embeddings
-- Prompt Library
-- Retrieval Augmented Generation (RAG)
+- Vector Search
+- Retrieval-Augmented Generation (RAG)
+- LangGraph
+- AI Agents
 
 ---
 
-## Data
+## Analytics
 
-Repository assets including:
-
-- Sample Data
-- Schemas
-- Test Data
-
----
-
-## Automation
-
-Deployment and operational automation.
-
-- CI/CD
-- Deployment
-- Monitoring
+- Power BI Reports
+- Semantic Models
+- KPI Dashboards
+- Business Intelligence
 
 ---
 
-## Documentation
+# 🗺️ Development Roadmap
 
-Architecture, setup guides, diagrams and design decisions.
+## Phase 1 — Repository Foundation
+
+- [x] Repository Setup
+- [x] Project Structure
+- [x] Documentation
+- [x] GitHub Configuration
 
 ---
 
-# Development Roadmap
+## Phase 2 — Microsoft Fabric
 
-- [x] Repository Architecture
-- [ ] Microsoft Fabric Foundation
-- [ ] Batch Data Pipelines
+- [ ] Workspace Setup
+- [ ] OneLake
+- [ ] Lakehouse
+- [ ] Data Factory
+- [ ] Spark Notebooks
+
+---
+
+## Phase 3 — Data Engineering
+
+- [ ] Batch Pipelines
 - [ ] Streaming Pipelines
-- [ ] Lakehouse & Medallion Architecture
+- [ ] Bronze Layer
+- [ ] Silver Layer
+- [ ] Gold Layer
+
+---
+
+## Phase 4 — Business Intelligence
+
 - [ ] Semantic Models
-- [ ] Power BI Dashboards
+- [ ] Power BI Reports
+- [ ] Executive Dashboards
+
+---
+
+## Phase 5 — Artificial Intelligence
+
 - [ ] Machine Learning
-- [ ] Feature Store
 - [ ] Embeddings
 - [ ] Vector Search
-- [ ] RAG
+- [ ] RAG Pipeline
 - [ ] AI Agents
-- [ ] Production Deployment
 
 ---
 
-# Current Status
+## Phase 6 — Production Readiness
 
-🚧 **Active Development**
-
-The repository architecture has been established and implementation is currently in progress.
+- [ ] Testing
+- [ ] CI/CD
+- [ ] Monitoring
+- [ ] Performance Optimization
 
 ---
 
-# Getting Started
+# 🔮 Planned Enhancements
+
+Future iterations may include:
+
+- Microsoft Purview Integration
+- MLflow Experiment Tracking
+- Feature Store
+- Data Quality Framework
+- Data Observability
+- Microsoft Fabric Data Activator
+- Multi-Agent Orchestration
+- Model Monitoring
+- Model Context Protocol (MCP)
+
+---
+
+# 📈 Current Status
+
+**Project Status:** 🚧 **Active Development**
+
+The repository structure has been finalized and the implementation phase has begun.
+
+The next milestones focus on building Microsoft Fabric pipelines, Spark notebooks, Power BI dashboards, and AI-powered analytics components.
+
+---
+
+# 🚀 Getting Started
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Janak2026/fabric-enterprise-ai-platform.git
+cd fabric-enterprise-ai-platform
 ```
 
-Open the repository in VS Code and follow the documentation under the `docs/` folder.
+Open the project in **Visual Studio Code** (or your preferred IDE).
+
+Implementation assets will be added progressively as each development milestone is completed.
 
 ---
 
-# License
+# 🤝 Contributing
 
-This project is licensed under the MIT License.
+Contributions, suggestions, architecture discussions, and improvements are welcome.
+
+Please review **CONTRIBUTING.md** before submitting pull requests.
 
 ---
 
-## Author
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for additional information.
+
+---
+
+# 👨‍💻 Author
 
 **Janardhana Rao Komanapalli**
 
-Senior Data Engineer | AI Data Engineering | Microsoft Fabric | Azure Databricks | Apache Spark
+Senior Data Engineer | AI Data Engineering | Microsoft Fabric | Azure Databricks | Apache Spark | Power BI
+
+---
+
+## ⭐ Support
+
+If you find this repository useful or interesting, consider giving it a **Star** on GitHub.
