@@ -1,264 +1,210 @@
-# 🚀 Project TITAN
+# TITAN
 
-![Microsoft Fabric](https://img.shields.io/badge/Microsoft-Fabric-blue)
-![Apache Spark](https://img.shields.io/badge/Apache-Spark-orange)
-![Delta Lake](https://img.shields.io/badge/Delta-Lake-green)
-![Power BI](https://img.shields.io/badge/Power-BI-yellow)
-![Python](https://img.shields.io/badge/Python-3.12-blue)
-![License](https://img.shields.io/badge/License-MIT-success)
+> **Enterprise AI Platform built on Microsoft Fabric**
 
-> **Trusted Intelligent Transformation & Analytics Network**
-
-An enterprise-grade AI Data Engineering platform that transforms raw Amazon customer reviews into actionable business insights using **Microsoft Fabric**, **OneLake**, **Spark Notebooks**, **Delta Lake**, **Lakehouse Architecture**, **Power BI**, **Machine Learning**, **Retrieval-Augmented Generation (RAG)**, and **AI Agents**.
+TITAN (Trusted Intelligent Transformation & Analytics Network) is an end-to-end Enterprise AI Data Platform that demonstrates how modern organizations build scalable data, analytics, machine learning, and Generative AI solutions using Microsoft Fabric.
 
 ---
 
-# 🚧 Project Status
+# Project Vision
 
-Project TITAN is currently under active development.
-
-| Phase | Status |
-|--------|--------|
-| Repository Foundation | ✅ Completed |
-| Microsoft Fabric Setup | 🔄 In Progress |
-| Bronze Layer | ⏳ Planned |
-| Silver Layer | ⏳ Planned |
-| Gold Layer | ⏳ Planned |
-| Machine Learning | ⏳ Planned |
-| RAG Pipeline | ⏳ Planned |
-| AI Agents | ⏳ Planned |
-| Power BI Dashboard | ⏳ Planned |
-
----
-
-# 📌 Business Problem
-
-Modern businesses receive millions of customer reviews every month.
-
-Traditional dashboards answer questions such as:
-
-- Average Rating
-- Number of Reviews
-- Sales
-
-But they fail to answer questions like:
-
-- Why are ratings dropping?
-- Which product features frustrate customers?
-- What issues appear most frequently?
-- Which products require immediate attention?
-- What actions should leadership prioritize?
-
-Project TITAN solves these problems by combining Data Engineering, Machine Learning, Large Language Models, and Business Intelligence into a single enterprise platform.
-
----
-
-# 🎯 Project Objectives
-
-Project TITAN demonstrates how to build an enterprise AI Data Platform using Microsoft Fabric.
-
-Objectives include:
-
-- Build an enterprise Lakehouse
-- Implement Bronze–Silver–Gold architecture
-- Develop scalable Spark pipelines
-- Train Machine Learning models
-- Generate AI-powered business insights
-- Implement Retrieval-Augmented Generation (RAG)
-- Build AI Agents for business users
-- Deliver executive Power BI dashboards
-
----
-
-# 🏗️ High-Level Architecture
-
-```
-                    Amazon Customer Reviews
-                              │
-                              ▼
-                  Microsoft Fabric Notebook
-                              │
-                              ▼
-                          OneLake
-                              │
-                              ▼
-                      Bronze Delta Tables
-                              │
-                              ▼
-                      Silver Delta Tables
-                              │
-                              ▼
-                      Gold Star Schema
-                              │
-                ┌─────────────┴─────────────┐
-                ▼                           ▼
-        Machine Learning              Power BI
-                │
-                ▼
-        Embeddings + Vector Search
-                │
-                ▼
-           RAG Pipeline
-                │
-                ▼
-            AI Agents
-```
-
----
-
-# 🛠 Technology Stack
-
-## Microsoft Fabric
+Build a production-style Enterprise AI Platform that combines:
 
 - Microsoft Fabric
-- OneLake
-- Fabric Spark Notebooks
-- Lakehouse
-- Delta Lake
-- SQL Analytics Endpoint
-- Fabric Data Factory
+- Lakehouse Architecture
+- Medallion Architecture
+- Real-Time Analytics
+- Machine Learning
+- Generative AI
+- RAG
+- AI Agents
+- Power BI
+
+---
+
+# Architecture
+
+```
+                 Enterprise Data Sources
+                           │
+        ┌──────────────────┴──────────────────┐
+        │                                     │
+    Batch Data                         Streaming Data
+        │                                     │
+        └──────────────┬──────────────────────┘
+                       │
+               Microsoft Fabric
+                       │
+        ┌──────────────┴──────────────┐
+        │                             │
+     Data Factory                Eventstream
+        │                             │
+        └──────────────┬──────────────┘
+                       │
+                   Lakehouse
+                       │
+            Bronze → Silver → Gold
+                       │
+        ┌──────────────┴──────────────┐
+        │                             │
+   Semantic Model                 AI Platform
+        │                             │
+    Power BI                  RAG • Agents • LLMs
+```
+
+---
+
+# Technology Stack
 
 ## Data Engineering
 
-- Apache Spark
+- Microsoft Fabric
+- OneLake
+- Data Factory
+- Lakehouse
+- Eventstream
+- Eventhouse
+- Spark
 - PySpark
-- Python
-- SQL
+- Delta Lake
 
-## Machine Learning
-
-- Scikit-learn
-- MLflow
-
-## Generative AI
-
-- LangChain
-- Sentence Transformers
-- FAISS
-- Local LLMs (Ollama)
-
-## Visualization
+## Analytics
 
 - Power BI
+- Semantic Models
+- SQL
 
-## Development
+## Artificial Intelligence
+
+- Azure OpenAI
+- LangGraph
+- RAG
+- Embeddings
+- Vector Search
+- AI Agents
+
+## DevOps
 
 - Git
 - GitHub
-- VS Code
-
-## Additional Experience
-
-- Azure Databricks
-- Azure Data Factory
-- Azure Synapse Analytics
+- CI/CD
 
 ---
 
-# 📂 Repository Structure
+# Repository Structure
 
-```
-project-titan/
-│
+```text
+fabric-enterprise-ai-platform/
+
+├── .github/
 ├── ai/
+├── assets/
+├── automation/
 ├── data/
 ├── docs/
-├── powerbi/
-├── src/
-├── tests/
-│
-├── README.md
-├── requirements.txt
-├── LICENSE
-└── .gitignore
+├── fabric/
+└── tests/
 ```
 
 ---
 
-# 📚 Documentation
+# Project Modules
 
-| Document | Description |
-|----------|-------------|
-| architecture.md | Solution Architecture |
-| setup.md | Environment Setup |
-| roadmap.md | Development Roadmap |
+## Fabric
+
+Microsoft Fabric implementation including:
+
+- Pipelines
+- Notebooks
+- Eventstream
+- Eventhouse
+- Semantic Models
+- Power BI
 
 ---
 
-# 🗺 Development Roadmap
+## AI
 
-## Version 0.1
-
-- Repository Foundation
-
-## Version 0.2
-
-- Fabric Workspace
-- Lakehouse
-- Bronze Layer
-
-## Version 0.3
-
-- Silver Layer
-
-## Version 0.4
-
-- Gold Layer
-
-## Version 0.5
-
-- Machine Learning
-
-## Version 0.6
-
-- RAG Pipeline
-
-## Version 0.7
+Enterprise AI components including:
 
 - AI Agents
-
-## Version 1.0
-
-- Complete Enterprise AI Data Platform
-
----
-
-# 🎯 Project Goal
-
-Build a production-style AI Data Engineering platform that demonstrates:
-
-- Enterprise Data Engineering
-- Microsoft Fabric
-- Lakehouse Architecture
-- Machine Learning
-- Generative AI
-- AI Agents
-- Business Intelligence
-
-while following real-world engineering practices including version control, modular architecture, reproducible pipelines, and scalable data processing.
+- Embeddings
+- Prompt Library
+- Retrieval Augmented Generation (RAG)
 
 ---
 
-# 📈 Current Progress
+## Data
 
-- ✅ Repository Initialized
-- ✅ Project Structure
-- ✅ Documentation
-- ✅ Configuration
-- 🔄 Microsoft Fabric Implementation
-- ⏳ Bronze Layer
-- ⏳ Silver Layer
-- ⏳ Gold Layer
-- ⏳ Machine Learning
-- ⏳ AI
-- ⏳ Power BI
+Repository assets including:
+
+- Sample Data
+- Schemas
+- Test Data
 
 ---
 
-# 📄 License
+## Automation
+
+Deployment and operational automation.
+
+- CI/CD
+- Deployment
+- Monitoring
+
+---
+
+## Documentation
+
+Architecture, setup guides, diagrams and design decisions.
+
+---
+
+# Development Roadmap
+
+- [x] Repository Architecture
+- [ ] Microsoft Fabric Foundation
+- [ ] Batch Data Pipelines
+- [ ] Streaming Pipelines
+- [ ] Lakehouse & Medallion Architecture
+- [ ] Semantic Models
+- [ ] Power BI Dashboards
+- [ ] Machine Learning
+- [ ] Feature Store
+- [ ] Embeddings
+- [ ] Vector Search
+- [ ] RAG
+- [ ] AI Agents
+- [ ] Production Deployment
+
+---
+
+# Current Status
+
+🚧 **Active Development**
+
+The repository architecture has been established and implementation is currently in progress.
+
+---
+
+# Getting Started
+
+```bash
+git clone https://github.com/Janak2026/fabric-enterprise-ai-platform.git
+```
+
+Open the repository in VS Code and follow the documentation under the `docs/` folder.
+
+---
+
+# License
 
 This project is licensed under the MIT License.
 
 ---
 
-**Project TITAN** is designed as a portfolio project to demonstrate enterprise-scale AI Data Engineering using Microsoft Fabric, Spark, Machine Learning, Generative AI, and Power BI.
+## Author
+
+**Janardhana Rao Komanapalli**
+
+Senior Data Engineer | AI Data Engineering | Microsoft Fabric | Azure Databricks | Apache Spark
